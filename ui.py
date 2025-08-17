@@ -270,3 +270,10 @@ def save_custom_config(self, levels, ach, tasks, window):
     save_data(self.data)
     window.destroy()
     build_dashboard(self)
+
+def check_compatibility(self):
+    if self.data.get("question_version") == PATHS["question_version"]:
+        messagebox.showinfo("Kompatybilność", "Pytania kompatybilne.")
+    else:
+        if messagebox.askyesno("Kompatybilność", "Pytania niekompatybilne. Rerun?"):
+            run_questionnaire(self)
