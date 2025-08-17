@@ -1,7 +1,7 @@
 import tkinter as tk
 
 from data import PATHS, load_data, save_data
-from ui import create_menu, build_intro_dashboard, run_questionnaire, build_dashboard, check_compatibility, update_task_list, add_task_window, add_task, complete_task, edit_task, save_edited_task, show_guides, add_guide_task, show_tech_tree, show_debug, customize_dashboard, save_custom_config
+from ui import create_menu, build_intro_dashboard, run_questionnaire, build_dashboard, update_task_list, add_task_window, add_task, complete_task, edit_task, save_edited_task, show_guides, add_guide_task, show_tech_tree, show_debug, customize_dashboard, save_custom_config, check_compatibility
 
 class LifeQuestApp:
     def __init__(self, root):
